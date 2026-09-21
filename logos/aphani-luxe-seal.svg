@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img">
+  <title>Aphani circular seal — monogram ring, on obsidian</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Jost:wght@300&amp;display=swap');</style>
+  <defs>
+    <path id="ring" d="M 150,44 a 106,106 0 1,1 -0.01,0" fill="none"/>
+  </defs>
+  <rect x="0" y="0" width="300" height="300" fill="#030711"/>
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#EDEFF4" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="150" cy="150" r="82" fill="none" stroke="#EDEFF4" stroke-opacity="0.28" stroke-width="0.8"/>
+  <text font-family="Jost, sans-serif" font-size="15" font-weight="300" letter-spacing="6.5" fill="#C9B37E">
+    <textPath href="#ring" startOffset="0">APHANI · SOLUTIONS · WHERE CALLS CONVERT ·</textPath>
+  </text>
+  <text x="150" y="192" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="112" font-weight="400" fill="#EDEFF4">A</text>
+</svg>

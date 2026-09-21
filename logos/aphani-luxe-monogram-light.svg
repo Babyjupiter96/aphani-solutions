@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img">
+  <title>Aphani monogram — winged A, obsidian ink for light backgrounds</title>
+  <path d="M120 42 L79 152" stroke="#030711" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M120 42 L161 152" stroke="#030711" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <line x1="28" y1="118" x2="212" y2="118" stroke="#030711" stroke-opacity="0.6" stroke-width="1.2"/>
+  <circle cx="28" cy="118" r="1.8" fill="#2E5F8A"/>
+  <circle cx="212" cy="118" r="1.8" fill="#2E5F8A"/>
+</svg>

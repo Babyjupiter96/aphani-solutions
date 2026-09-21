@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aphani Solutions — Elite Sales for Boutique Fitness Franchises</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap');
+
+    :root {
+      --bg: #030711;
+      --bg2: #050B1A;
+      --ink: #EDEFF4;
+      --muted: #8C99B0;
+      --steel: #8FB3D4;
+      --accent: #2E5F8A;
+      --hairline: rgba(200,214,235,0.14);
+      --hairline-strong: rgba(200,214,235,0.28);
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: var(--accent); color: white; }
+
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .wordmark {
+      font-family: 'Cinzel', Georgia, serif;
+      letter-spacing: 0.45em;
+      font-weight: 400;
+      text-indent: 0.45em;
+    }
+
+    .overline {
+      font-size: 11px;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--steel);
+      font-weight: 400;
+    }
+    .sec-label {
+      display: flex;
+      align-items: baseline;
+      gap: 1.4rem;
+      margin-bottom: 4.5rem;
+    }
+    .sec-label .num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .sec-label .rule { flex: 1; height: 1px; background: var(--hairline); }
+
+    /* ---------- nav ---------- */
+    nav.top {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.2rem 5vw;
+    }
+    .brand { font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+    .brand small {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 8.5px;
+      letter-spacing: 0.52em;
+      color: var(--muted);
+      margin-top: 0.3rem;
+      text-indent: 0.52em;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2.6rem; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 11.5px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      transition: color 0.4s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .btn {
+      display: inline-block;
+      border: 1px solid var(--hairline-strong);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 11.5px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      padding: 0.95rem 2.4rem;
+      transition: background 0.5s, color 0.5s, border-color 0.5s;
+    }
+    .btn:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .btn.solid { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .btn.solid:hover { background: transparent; color: var(--ink); border-color: var(--hairline-strong); }
+
+    /* ---------- hero ---------- */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 9rem 5vw 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 90% 60% at 70% -10%, rgba(46,95,138,0.18), transparent 60%),
+        radial-gradient(circle, rgba(237,239,244,0.035) 1px, transparent 1px);
+      background-size: auto, 72px 72px;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: -60%;
+      background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(143,179,212,0.05) 40deg, transparent 90deg);
+      animation: sheen 26s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes sheen { to { transform: rotate(360deg); } }
+    .hero-inner { position: relative; z-index: 2; max-width: 1200px; }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: clamp(3.4rem, 8.5vw, 7.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      margin: 2.2rem 0 2.6rem;
+    }
+    .hero h1 em { font-style: italic; color: var(--steel); }
+    .hero-tag {
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+      color: var(--steel);
+      margin: -1rem 0 2rem;
+    }
+    .hero .lede {
+      max-width: 560px;
+      color: #B7C2D8;
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 3.2rem;
+    }
+    .hero-cta { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    .hero-foot {
+      position: relative; z-index: 2;
+      margin-top: auto;
+      padding-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    /* entrance */
+    @keyframes rise { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: none; } }
+    .hero-inner > * { opacity: 0; animation: rise 1.3s cubic-bezier(.22,.61,.21,1) forwards; }
+    .hero-inner > *:nth-child(1) { animation-delay: 0.2s; }
+    .hero-inner > *:nth-child(2) { animation-delay: 0.4s; }
+    .hero-inner > *:nth-child(3) { animation-delay: 0.65s; }
+    .hero-inner > *:nth-child(4) { animation-delay: 0.85s; }
+    .hero-foot { opacity: 0; animation: rise 1.3s 1.2s cubic-bezier(.22,.61,.21,1) forwards; }
+
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 1.1s cubic-bezier(.22,.61,.21,1), transform 1.1s cubic-bezier(.22,.61,.21,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* ---------- marquee ---------- */
+    .clients {
+      border-top: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      padding: 2.4rem 0;
+      overflow: hidden;
+      background: var(--bg);
+    }
+    .marquee-track { display: flex; width: max-content; animation: marquee 42s linear infinite; }
+    .marquee-set { display: flex; align-items: center; gap: 8rem; padding-right: 8rem; }
+    .marquee-set img { height: 34px; width: auto; filter: brightness(0) invert(1); opacity: 0.45; transition: opacity 0.4s; }
+    .marquee-set img:hover { opacity: 0.9; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    section { padding: 9rem 5vw; }
+    .wrap { max-width: 1240px; margin: 0 auto; }
+
+    /* ---------- numbers ---------- */
+    .numbers { background: var(--bg2); border-bottom: 1px solid var(--hairline); }
+    .num-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+    .num-cell {
+      padding: 2.2rem 2.4rem;
+      border-left: 1px solid var(--hairline);
+    }
+    .num-cell:first-child { border-left: none; padding-left: 0; }
+    .num-cell .figure {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(3rem, 4.6vw, 4.6rem);
+      line-height: 1.1;
+      color: var(--ink);
+    }
+    .num-cell .cap {
+      margin-top: 0.6rem;
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ---------- services ---------- */
+    .svc { border-top: 1px solid var(--hairline); display: grid; grid-template-columns: 110px 1fr 1.1fr; gap: 2.5rem; padding: 3.4rem 0; align-items: baseline; transition: background 0.5s; }
+    .svc:last-child { border-bottom: 1px solid var(--hairline); }
+    .svc .idx { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.3rem; color: var(--muted); }
+    .svc h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 2.3rem; line-height: 1.15; }
+    .svc p { color: var(--muted); font-size: 1rem; max-width: 520px; }
+    .svc:hover h3 { color: var(--steel); transition: color 0.5s; }
+
+    /* ---------- results ---------- */
+    .results { background: var(--bg2); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+    .res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .res-cell { border-left: 1px solid var(--hairline); padding: 1rem 2.6rem 1rem; }
+    .res-cell:first-child { border-left: none; padding-left: 0; }
+    .res-cell .figure {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.8rem, 4vw, 4rem);
+      color: var(--ink);
+      line-height: 1.15;
+    }
+    .res-cell .what { margin-top: 0.8rem; color: var(--ink); font-weight: 400; font-size: 0.95rem; letter-spacing: 0.06em; }
+    .res-cell .where { margin-top: 0.2rem; color: var(--muted); font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; }
+
+    /* ---------- statement ---------- */
+    .statement { text-align: center; padding: 12rem 5vw; }
+    .statement blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+      line-height: 1.18;
+      max-width: 1000px;
+      margin: 0 auto 2.4rem;
+    }
+    .statement .sub { color: var(--muted); max-width: 520px; margin: 0 auto 3.4rem; }
+
+    /* ---------- contact ---------- */
+    .contact { border-top: 1px solid var(--hairline); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; }
+    .contact h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.6rem, 4.4vw, 4rem); line-height: 1.1; margin-bottom: 2rem; }
+    .contact .meta { color: var(--muted); font-size: 0.95rem; line-height: 2.1; }
+    .contact .meta strong { color: var(--ink); font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; display: block; margin-top: 1.6rem; }
+    .field { margin-bottom: 2.4rem; }
+    .field label { display: block; font-size: 10.5px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+    .field input, .field textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--hairline-strong);
+      color: var(--ink);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 1.05rem;
+      padding: 0.6rem 0;
+      outline: none;
+      transition: border-color 0.4s;
+      border-radius: 0;
+    }
+    .field input:focus, .field textarea:focus { border-bottom-color: var(--steel); }
+    .field textarea { resize: vertical; min-height: 90px; }
+
+    footer {
+      border-top: 1px solid var(--hairline);
+      padding: 3.4rem 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 10.5px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+    footer .wordmark { font-size: 0.95rem; color: var(--ink); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-inner > *, .hero-foot { animation: none; opacity: 1; }
+      .reveal { transition: none; opacity: 1; transform: none; }
+      .marquee-track { animation: none; }
+      .hero::after { animation: none; }
+    }
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 860px) {
+      nav.top { padding: 1.6rem 6vw; }
+      .nav-links a { display: none; }
+      .nav-links .btn { display: inline-block; padding: 0.7rem 1.5rem; font-size: 10px; }
+      .hero { padding: 8rem 6vw 3rem; }
+      .hero-foot { flex-direction: column; align-items: flex-start; gap: 0.8rem; padding-top: 3rem; }
+      section { padding: 5.5rem 6vw; }
+      .svc { grid-template-columns: 1fr; gap: 0.8rem; padding: 2.4rem 0; }
+      .num-cell, .res-cell { border-left: none; padding: 1.6rem 0; border-top: 1px solid var(--hairline); }
+      .num-cell:first-child, .res-cell:first-child { border-top: none; padding-top: 0; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+      .statement { padding: 7rem 6vw; }
+      .marquee-set { gap: 4rem; padding-right: 4rem; }
+      .marquee-set img { height: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top">
+    <a href="#" class="brand wordmark">APHANI<small>SOLUTIONS</small></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn">Book a Call</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="overline">Aphani Solutions &nbsp;·&nbsp; Where Calls Convert</p>
+      <h1>Elite sales.<br><em>Exceptional</em> results.</h1>
+      <p class="hero-tag serif">Where calls convert.</p>
+      <p class="lede">The dedicated sales team for boutique fitness franchises. Every lead called. Every trial closed. Every night, you see the numbers.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn solid">Book a Discovery Call</a>
+        <a href="#numbers" class="btn">Explore the Numbers</a>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <span>Baltimore, MD</span>
+      <span>Est. 2026</span>
+      <span>Scroll</span>
+    </div>
+  </header>
+
+  <div class="clients" aria-label="Fitness brands Aphani Solutions works with">
+    <p class="overline" style="text-align:center; margin:0 0 1.6rem;">Trusted by leading fitness franchises</p>
+    <div class="marquee-track">
+      <div class="marquee-set">
+        <img src="logos/f45.svg" alt="F45 Training">
+        <img src="logos/fxb.png" alt="Farrell's eXtreme Bodyshaping">
+        <img src="logos/mayweather.png" alt="Mayweather Boxing + Fitness">
+        <img src="logos/maxchallenge.png" alt="The MAX Challenge">
+      </div>
+      <div class="marquee-set" aria-hidden="true">
+        <img src="logos/f45.svg" alt="">
+        <img src="logos/fxb.png" alt="">
+        <img src="logos/mayweather.png" alt="">
+        <img src="logos/maxchallenge.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <section class="numbers" id="numbers">
+    <div class="wrap">
+      <div class="sec-label reveal">
+        <span class="num">01</span>
+        <span class="overline">The numbers</span>
+        <span class="rule"></span>
+      </div>
+      <div class="num-grid">
+        <div class="num-cell reveal">
+          <div class="figure"><span data-count="1400" data-suffix="+">0</span></div>
+          <div class="cap">Calls per location, monthly</div>
+        </div>
+        <div class="num-cell reveal">
+          <div class="figure"><span data-count="87.5" data-decimals="1" data-suffix="%">0</span></div>
+          <div class="cap">Trial close rate</div>
+        </div>
+        <div class="num-cell reveal">
+          <div class="figure"><span data-count="5.49" data-decimals="2" data-suffix="×">0</span></div>
+          <div class="cap">ROI in ninety days</div>
+        </div>
+        <div class="num-cell reveal">
+          <div class="figure"><span data-count="17">0</span></div>
+          <div class="cap">Locations under management</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-label reveal">
+        <span class="num">02</span>
+        <span class="overline">What we do</span>
+        <span class="rule"></span>
+      </div>
+      <div class="svc reveal">
+        <span class="idx">i.</span>
+        <h3>Outbound, relentlessly.</h3>
+        <p>1,400+ calls per location per month, scripted around your specific program — not a generic pitch. Your leads hear from us before they forget you exist.</p>
+      </div>
+      <div class="svc reveal">
+        <span class="idx">ii.</span>
+        <h3>Closed on the first call.</h3>
+        <p>Needs assessment, value build, close. The trial is our fallback, not our opener. That discipline is why our close rates lead the network.</p>
+      </div>
+      <div class="svc reveal">
+        <span class="idx">iii.</span>
+        <h3>Total transparency.</h3>
+        <p>End-of-day reports, every day. MACRO reports, every month. Strategy calls, every other week. You will never wonder what we did with your leads.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="results" id="results">
+    <div class="wrap">
+      <div class="sec-label reveal">
+        <span class="num">03</span>
+        <span class="overline">Proof, not promises</span>
+        <span class="rule"></span>
+      </div>
+      <div class="res-grid">
+        <div class="res-cell reveal">
+          <div class="figure">$17,006</div>
+          <div class="what">Revenue in month one</div>
+          <div class="where">FXB franchise location</div>
+        </div>
+        <div class="res-cell reveal">
+          <div class="figure">5.49×</div>
+          <div class="what">Return on investment, 90 days</div>
+          <div class="where">FXB franchise location</div>
+        </div>
+        <div class="res-cell reveal">
+          <div class="figure">87.5%</div>
+          <div class="what">Trial close rate, best in network</div>
+          <div class="where">FXB franchise location</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <blockquote class="reveal">&ldquo;Stop leaving memberships on the table. We handle sales&nbsp;— you run your studio.&rdquo;</blockquote>
+    <p class="sub reveal">A partnership, not a vendor. Seventeen locations across four states already trust us with their front line.</p>
+    <a href="#contact" class="btn reveal">Apply for Partnership</a>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-label reveal">
+        <span class="num">04</span>
+        <span class="overline">Contact</span>
+        <span class="rule"></span>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2>Let&rsquo;s talk about your front desk&rsquo;s missed calls.</h2>
+          <div class="meta">
+            <strong>Office</strong>
+            306 W Redwood St, STE 201<br>Baltimore, MD 21201
+            <strong>Phone</strong>
+            (945) 412-8283
+          </div>
+        </div>
+        <form class="reveal" onsubmit="return false;">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="f-msg">About your studio</label>
+            <textarea id="f-msg"></textarea>
+          </div>
+          <button type="submit" class="btn solid" style="cursor:pointer; font-family:'Jost',sans-serif;">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="wordmark">APHANI</span>
+    <span>Elite Sales · Exceptional Results · Where Calls Convert</span>
+    <span>&copy; 2026 Aphani Solutions LLC</span>
+  </footer>
+
+  <script>
+    var revealEls = document.querySelectorAll('.reveal');
+    var grids = document.querySelectorAll('.num-grid, .res-grid');
+    grids.forEach(function (grid) {
+      Array.prototype.forEach.call(grid.children, function (child, i) {
+        child.dataset.d = i * 140;
+      });
+    });
+
+    function countUp(el) {
+      var target = parseFloat(el.dataset.count);
+      var decimals = parseInt(el.dataset.decimals || '0', 10);
+      var suffix = el.dataset.suffix || '';
+      var dur = 1800, t0 = null;
+      function frame(t) {
+        if (!t0) t0 = t;
+        var p = Math.min((t - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 4);
+        var val = target * eased;
+        el.textContent = val.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
+        if (p < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.style.transitionDelay = (entry.target.dataset.d || 0) + 'ms';
+        entry.target.classList.add('in');
+        entry.target.querySelectorAll('[data-count]').forEach(countUp);
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.2 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  </script>
+
+</body>
+</html>

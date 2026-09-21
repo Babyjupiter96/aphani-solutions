@@ -244,6 +244,30 @@ p  { font-size: 1rem; line-height: 1.75; }
 .hero-sub { font-size: 1.05rem; color: var(--text-off); line-height: 1.8; max-width: 560px; margin-bottom: 36px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 28px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  padding: 16px 22px;
+  flex-wrap: wrap;
+}
+.proof-item { display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 90px; }
+.proof-num  { font-size: 1.4rem; font-weight: 800; color: var(--white); line-height: 1; }
+.proof-label { font-size: .7rem; color: rgba(255,255,255,.45); font-weight: 500; }
+.proof-divider { width: 1px; background: rgba(255,255,255,.12); align-self: stretch; margin: 0 20px; flex-shrink: 0; }
+
+.nav-phone {
+  font-size: .82rem; font-weight: 600;
+  color: rgba(255,255,255,.55) !important;
+  padding: 8px 10px !important;
+  transition: color .2s !important;
+}
+.nav-phone:hover { color: var(--white) !important; background: none !important; }
+
 .hero-photo-card {
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255,255,255,.1);

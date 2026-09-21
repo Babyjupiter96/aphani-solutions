@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img">
+  <title>Aphani Solutions logo — white on hero navy</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;display=swap');
+    text { font-family: 'Cinzel', 'Trajan Pro', Georgia, serif; }
+  </style>
+  <rect x="0" y="0" width="600" height="200" fill="#040918"/>
+  <text x="309" y="98" text-anchor="middle" font-size="84" font-weight="400" letter-spacing="18" fill="#FFFFFF">APHANI</text>
+  <path d="M60 143 Q 114 139.5, 166 143 Q 114 146.5, 60 143 Z" fill="#FFFFFF"/>
+  <path d="M174 143 L180 139.5 L186 143 L180 146.5 Z" fill="#FFFFFF"/>
+  <text x="306" y="150" text-anchor="middle" font-size="22" font-weight="400" letter-spacing="12" fill="#FFFFFF">SOLUTIONS</text>
+  <path d="M414 143 L420 139.5 L426 143 L420 146.5 Z" fill="#FFFFFF"/>
+  <path d="M434 143 Q 486 139.5, 540 143 Q 486 146.5, 434 143 Z" fill="#FFFFFF"/>
+</svg>

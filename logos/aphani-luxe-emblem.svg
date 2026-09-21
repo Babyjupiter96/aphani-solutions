@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 490" role="img">
+  <title>Aphani emblem — winged A crest over wordmark, on obsidian</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Jost:wght@300&amp;display=swap');</style>
+  <rect x="0" y="0" width="600" height="490" fill="#030711"/>
+  <line x1="95" y1="160" x2="505" y2="160" stroke="#EDEFF4" stroke-width="5"/>
+  <line x1="130" y1="176" x2="252" y2="176" stroke="#EDEFF4" stroke-width="3.5"/>
+  <line x1="348" y1="176" x2="470" y2="176" stroke="#EDEFF4" stroke-width="3.5"/>
+  <line x1="162" y1="192" x2="244" y2="192" stroke="#EDEFF4" stroke-width="2.5"/>
+  <line x1="356" y1="192" x2="438" y2="192" stroke="#EDEFF4" stroke-width="2.5"/>
+  <text x="300" y="210" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="150" font-weight="500" fill="#EDEFF4">A</text>
+  <text x="311" y="345" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="76" font-weight="500" letter-spacing="22" fill="#EDEFF4">APHANI</text>
+  <line x1="120" y1="404" x2="222" y2="404" stroke="#C9B37E" stroke-width="1.2"/>
+  <text x="306" y="409" text-anchor="middle" font-family="Jost, sans-serif" font-size="17" font-weight="300" letter-spacing="11" fill="#C9B37E">SOLUTIONS</text>
+  <line x1="378" y1="404" x2="480" y2="404" stroke="#C9B37E" stroke-width="1.2"/>
+</svg>

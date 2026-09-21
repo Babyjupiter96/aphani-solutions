@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" role="img">
+  <title>Aphani wordmark — obsidian, for light backgrounds</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&amp;family=Jost:wght@300&amp;display=swap');</style>
+  <text x="379" y="130" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="96" font-weight="400" letter-spacing="38" fill="#030711">APHANI</text>
+  <line x1="84" y1="180" x2="252" y2="180" stroke="#030711" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="366" y="185" text-anchor="middle" font-family="Jost, sans-serif" font-size="16" font-weight="300" letter-spacing="13" fill="#2E5F8A">SOLUTIONS</text>
+  <line x1="468" y1="180" x2="636" y2="180" stroke="#030711" stroke-opacity="0.35" stroke-width="1"/>
+</svg>

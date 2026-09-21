@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .anim-0, .anim-1, .anim-2, .anim-3, .anim-4 { opacity: 1 !important; animation: none !important; }
+    #hero { background: #0a0a0a; }
+    .hero-title { color: #ffffff; }
+    .hero-bg-accent { background: linear-gradient(135deg, rgba(201,168,76,.15) 0%, transparent 60%); }
+    .hero-tagline { color: #C9A84C; }
+    .stats-bar { background: #C9A84C; }
+    .stat-num { color: #0a0a0a; }
+    .stat-label { color: rgba(0,0,0,.6); }
+    .btn-blue { background: #C9A84C; border-color: #C9A84C; color: #0a0a0a; }
+    .btn-blue:hover { background: #b8963e; border-color: #b8963e; }
+    .proof-num { color: #C9A84C; }
+    #navbar { background: #0a0a0a; }
+  </style>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -26,6 +40,7 @@
       <li><a href="services.html">Services</a></li>
       <li><a href="results.html">Results</a></li>
       <li><a href="partnership.html">Partnership</a></li>
+      <li><a href="tel:9454128283" class="nav-phone">(945) 412-8283</a></li>
       <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -47,12 +62,19 @@
     <div class="hero-layout">
       <div class="hero-text">
         <div class="hero-eyebrow anim-0">Boutique Fitness Sales Specialists</div>
-        <h1 class="hero-title anim-1">Elite Sales.<br />Exceptional Results.</h1>
-        <p class="hero-tagline anim-2">Where Calls Convert.</p>
-        <p class="hero-sub anim-3">Aphani Solutions is the dedicated call center and sales team for boutique fitness franchise owners. We convert leads into booked appointments, active memberships, and long-term growth — so you can stay focused on running your studio.</p>
+        <h1 class="hero-title anim-1">Your Leads Are Going Cold.<br />We Fix That.</h1>
+        <p class="hero-tagline anim-2">1,400+ outbound calls. First-call closes. Results by Day 30.</p>
+        <p class="hero-sub anim-3">Aphani Solutions is the dedicated call center and sales team built exclusively for boutique fitness franchise owners. We convert your leads into memberships — so you can stay on the floor where you belong.</p>
+        <div class="hero-proof anim-3">
+          <div class="proof-item"><span class="proof-num">$20,491</span><span class="proof-label">FXB Grimes — 90 days</span></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><span class="proof-num">5.49×</span><span class="proof-label">ROI on same campaign</span></div>
+          <div class="proof-divider"></div>
+          <div class="proof-item"><span class="proof-num">87.5%</span><span class="proof-label">Trial close rate</span></div>
+        </div>
         <div class="hero-actions anim-4">
-          <a href="partnership.html" class="btn btn-blue btn-lg">See How It Works →</a>
-          <a href="contact.html" class="btn btn-outline-white btn-lg">Talk to Us About Your Location</a>
+          <a href="contact.html" class="btn btn-blue btn-lg">Get a Free Studio Analysis →</a>
+          <a href="results.html" class="btn btn-outline-white btn-lg">See the Results</a>
         </div>
       </div>
       <div class="hero-photo-card">

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 200" role="img">
+  <title>Aphani horizontal lockup — winged A beside wordmark, on obsidian</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Jost:wght@300&amp;display=swap');</style>
+  <rect x="0" y="0" width="760" height="200" fill="#030711"/>
+  <line x1="28" y1="98" x2="196" y2="98" stroke="#EDEFF4" stroke-width="3"/>
+  <line x1="48" y1="110" x2="98" y2="110" stroke="#EDEFF4" stroke-width="2"/>
+  <line x1="126" y1="110" x2="176" y2="110" stroke="#EDEFF4" stroke-width="2"/>
+  <text x="112" y="130" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="86" font-weight="500" fill="#EDEFF4">A</text>
+  <line x1="236" y1="52" x2="236" y2="148" stroke="#EDEFF4" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="278" y="106" font-family="Cinzel, Georgia, serif" font-size="58" font-weight="500" letter-spacing="16" fill="#EDEFF4">APHANI</text>
+  <text x="281" y="140" font-family="Jost, sans-serif" font-size="14" font-weight="300" letter-spacing="10.5" fill="#C9B37E">SOLUTIONS</text>
+</svg>
